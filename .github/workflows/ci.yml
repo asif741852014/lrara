@@ -11,4 +11,6 @@ jobs:
   job2:
     runs-on: ubuntu-latest
     steps:
-    - run: echo "hi from job2"
+    - run: |
+        echo "hi from job2"
+        exit 1
