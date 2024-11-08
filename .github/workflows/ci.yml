@@ -1,0 +1,14 @@
+name: abcd
+on:
+  pull_request:
+    branches:
+    - main
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+    - run: echo "hi from job1"
+  job2:
+    runs-on: ubuntu-latest
+    steps:
+    - run: echo "hi from job2"
